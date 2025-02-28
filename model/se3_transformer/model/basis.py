@@ -27,6 +27,8 @@ from typing import Dict, List
 
 import e3nn.o3 as o3
 import torch
+import intel_extension_for_pytorch as ipex
+
 import torch.nn.functional as F
 from torch import Tensor
 from torch.cuda.nvtx import range as nvtx_range

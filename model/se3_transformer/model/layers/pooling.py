@@ -24,6 +24,8 @@
 from typing import Dict, Literal
 
 import torch.nn as nn
+import intel_extension_for_pytorch as ipex
+
 from dgl import DGLGraph
 from dgl.nn.pytorch import AvgPooling, MaxPooling
 from torch import Tensor

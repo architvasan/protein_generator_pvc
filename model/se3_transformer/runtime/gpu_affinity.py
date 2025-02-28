@@ -27,6 +27,7 @@ import math
 import os
 import pathlib
 import re
+import intel_extension_for_pytorch as ipex
 
 import pynvml
 

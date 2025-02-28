@@ -27,6 +27,8 @@ from typing import List
 
 import numpy as np
 import torch
+import intel_extension_for_pytorch as ipex
+
 import torch.distributed as dist
 import torch.nn as nn
 from apex.optimizers import FusedAdam, FusedLAMB

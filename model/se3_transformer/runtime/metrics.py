@@ -24,6 +24,8 @@
 from abc import ABC, abstractmethod
 
 import torch
+import intel_extension_for_pytorch as ipex
+
 import torch.distributed as dist
 from torch import Tensor
 

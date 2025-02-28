@@ -31,6 +31,7 @@ from typing import Union, List, Dict
 
 import numpy as np
 import torch
+import intel_extension_for_pytorch as ipex
 import torch.distributed as dist
 from torch import Tensor
 

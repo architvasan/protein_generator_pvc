@@ -27,6 +27,8 @@ from itertools import product
 from typing import Dict
 
 import torch
+import intel_extension_for_pytorch as ipex
+
 from torch import Tensor
 
 from se3_transformer.runtime.utils import degree_to_dim

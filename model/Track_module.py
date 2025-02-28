@@ -1,4 +1,5 @@
 import torch
+import intel_extension_for_pytorch as ipex
 import torch.nn as nn
 import torch.nn.functional as F
 from opt_einsum import contract as einsum

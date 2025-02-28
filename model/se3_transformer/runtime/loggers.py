@@ -28,6 +28,8 @@ from typing import Dict, Any, Callable, Optional
 
 import dllogger
 import torch.distributed as dist
+import intel_extension_for_pytorch as ipex
+
 import wandb
 from dllogger import Verbosity
 

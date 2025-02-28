@@ -28,6 +28,8 @@ from typing import Dict
 import dgl
 import numpy as np
 import torch
+import intel_extension_for_pytorch as ipex
+
 import torch.nn as nn
 from dgl import DGLGraph
 from torch import Tensor

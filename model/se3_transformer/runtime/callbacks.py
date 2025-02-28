@@ -28,6 +28,7 @@ from typing import Optional
 
 import numpy as np
 import torch
+import intel_extension_for_pytorch as ipex
 
 from se3_transformer.runtime.loggers import Logger
 from se3_transformer.runtime.metrics import MeanAbsoluteError
