@@ -3,6 +3,8 @@ import os
 import csv
 import random
 import torch
+import intel_extension_for_pytorch as ipex
+
 from torch.utils import data
 import numpy as np
 from dateutil import parser

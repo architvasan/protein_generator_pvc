@@ -1,5 +1,7 @@
 import numpy as np
 import torch
+import intel_extension_for_pytorch as ipex
+
 
 # ============================================================
 def get_pair_dist(a, b):

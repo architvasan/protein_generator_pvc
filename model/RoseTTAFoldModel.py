@@ -1,4 +1,6 @@
 import torch
+import intel_extension_for_pytorch as ipex
+
 import torch.nn as nn
 from Embeddings import MSA_emb, Extra_emb, Templ_emb, Recycling
 from Track_module import IterativeSimulator

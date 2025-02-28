@@ -1,6 +1,8 @@
 import numpy as np
 import torch
 from chemical import INIT_CRDS
+import intel_extension_for_pytorch as ipex
+
 
 PARAMS = {
     "DMIN"    : 2.0,

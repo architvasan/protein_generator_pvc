@@ -8,6 +8,7 @@ sys.path = sys.path + [script_dir+'/../model/'] + [script_dir+'/']
 import shutil
 import glob
 import torch
+import intel_extension_for_pytorch as ipex
 import numpy as np
 import copy
 import json

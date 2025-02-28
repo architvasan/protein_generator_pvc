@@ -1,5 +1,7 @@
 import sys, os
 import torch
+import intel_extension_for_pytorch as ipex
+
 from icecream import ic
 import random
 import numpy as np

@@ -6,6 +6,8 @@
 import numpy as np
 import random
 import torch
+import intel_extension_for_pytorch as ipex
+
 
 def vector_dot(v1,v2):
     return (v1*v2).sum(axis=-1)

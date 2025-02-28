@@ -25,6 +25,8 @@ from typing import Tuple
 import dgl
 import pathlib
 import torch
+import intel_extension_for_pytorch as ipex
+
 from dgl.data import QM9EdgeDataset
 from dgl import DGLGraph
 from torch import Tensor

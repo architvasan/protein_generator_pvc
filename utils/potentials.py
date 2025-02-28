@@ -2,6 +2,7 @@ import os, sys
 import shutil
 import glob
 import torch
+import intel_extension_for_pytorch as ipex
 import numpy as np
 import copy
 from itertools import groupby

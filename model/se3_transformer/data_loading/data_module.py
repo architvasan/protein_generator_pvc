@@ -21,6 +21,8 @@
 # SPDX-FileCopyrightText: Copyright (c) 2021 NVIDIA CORPORATION & AFFILIATES
 # SPDX-License-Identifier: MIT
 
+import intel_extension_for_pytorch as ipex
+
 import torch.distributed as dist
 from abc import ABC
 from torch.utils.data import DataLoader, DistributedSampler, Dataset
