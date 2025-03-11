@@ -28,7 +28,7 @@ import torch
 import intel_extension_for_pytorch as ipex
 import torch.nn as nn
 from torch import Tensor
-from torch.cuda.nvtx import range as nvtx_range
+#from torch.cuda.nvtx import range as nvtx_range
 
 from se3_transformer.model.fiber import Fiber
 
@@ -60,7 +60,7 @@ class NormSE3(nn.Module):
             })
 
     def forward(self, features: Dict[str, Tensor], *args, **kwargs) -> Dict[str, Tensor]:
-        with nvtx_range('NormSE3'):
+        with ipex.profiler.prof_range_push('NormSE3'):
             output = {}
             if hasattr(self, 'group_norm'):
                 # Compute per-degree norms of features

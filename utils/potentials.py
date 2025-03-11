@@ -15,7 +15,7 @@ import pandas as pd
 from tqdm import tqdm
 import random
 import Bio
-DEVICE = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+DEVICE = torch.device('xpu')#torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
 conversion = 'ARNDCQEGHILKMFPSTWYVX-'
 

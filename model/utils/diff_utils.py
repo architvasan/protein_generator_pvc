@@ -178,7 +178,7 @@ def take_step(model, msa, msa_extra, seq, t1d, t2d, idx_pdb, N_cycle, xyz_prev, 
     #ic(msa.shape)
     B, _, N, L, _ = msa.shape
     with torch.no_grad():
-        with torch.cuda.amp.autocast(True):
+        with torch.xpu.amp.autocast(True):
             for i_cycle in range(N_cycle-1):
                 msa_prev, pair_prev, xyz_prev, state_prev, alpha = model(msa[:,0],
                                                                    msa_extra[:,0],
@@ -235,7 +235,7 @@ def take_step_nostate(model, msa, msa_extra, seq, t1d, t2d, idx_pdb, N_cycle, xy
     
     B, _, N, L, _ = msa.shape
     with torch.no_grad():
-        with torch.cuda.amp.autocast(True):
+        with torch.xpu.amp.autocast(True):
             for i_cycle in range(N_cycle-1):
                 msa_prev, pair_prev, xyz_prev, state_prev, alpha = model(msa[:,0],
                                                                    msa_extra[:,0],
